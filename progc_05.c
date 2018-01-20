@@ -37,3 +37,32 @@ int main()
 	return 0;
 }
 
+int main()
+{
+	char s1[] = "aaab1";
+	char s2[] = "aaxb2";
+
+	printf("s1: %s\n", s1);
+	printf("s2: %s\n", s2);
+	printf("--------------\n");
+
+	if (s1 == s2) {
+		printf("s1 == s2 \n");
+	}
+
+	if (*s1 == *s2) {
+		printf("*s1 == *s2 \n");
+	}
+
+	if (*(s1 + 1) == *(s2 + 1)) {
+		printf("*(s1 + 1) == *(s2 + 1) \n");
+	}
+
+	// czy mozemy cos takiego napisac???
+	if (s1[10] == s2[10]) {
+		printf("s1[10] == s2[10] \n");
+	}
+
+	printf("--------------\n");
+}
+
